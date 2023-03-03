@@ -6,25 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lift simulation</title>
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="shortcut icon" href="/assets/shortcut icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
       <h1>Lift simulation</h1>
-      <div class="buttons-div">
-        <button class="add-floor-button">Add floor</button>
-        <button class="add-lift-button">Add lift</button>
+      <div class="add-btns">
+        <button class="add-floor-btn" data-lift-num="4">
+          <i class="fa-solid fa-plus"></i>
+          Floor
+        </button>
+        <button class="add-lift-btn" data-lift-num="4">
+          <i class="fa-solid fa-plus"></i>
+          Lift
+        </button>
       </div>
     </header>
     <main>
       <div class="floors">
         <div class="floor">
           <div class="lift-buttons">
-            <button class="up-lift-button">Up</button>
-            <button class="down-lift-button">Down</button>
+            <button class="call-lift-btn open-lift_btn" data-lift-num="0">
+              <i class="fa-solid fa-angle-up"></i>
+            </button>
+            <button class="call-lift-btn close-lift_btn" data-lift-num="0">
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
           </div>
-          <div class="lift-box"></div>
+
+          <div class="lift-container">
+            <div class="left-door"></div>
+            <div class="right-door"></div>
+          </div>
         </div>
       </div>
     </main>
+
+    <footer>
+      <a
+        href="https://github.com/Rutuja-Kelkar/lift-simulation"
+        target="_blank"
+      >
+        <p><i class="fa-brands fa-github"></i> Github source - Rutuja Kelkar</p>
+      </a>
+    </footer>
+    <script src="/script/script.js"></script>
   </body>
 </html>
