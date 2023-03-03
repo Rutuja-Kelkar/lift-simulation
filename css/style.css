@@ -1,0 +1,40 @@
+*{
+    padding: 0px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 600px;
+    height: 800px;
+    border-radius: 10px;
+    background-color: rgb(235, 255, 248);
+    margin: auto;
+    font-family: 'Lora', serif;
+}
+
+header{
+   display: flex;
+
+}
+
+.floor{
+    display: flex;
+}
+
+
+
+.lift_simulation_h1{
+padding: 10px;
+}
+
+.lift-box{
+    width: 60px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: blue;
+}
+
+
+
